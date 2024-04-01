@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  nvim:
+    container_name: dev-env 
+    build:
+      dockerfile: Dockerfile
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 2G
+    volumes:
+      - C:\Programming:/root/workspace
+      - .\config\nvim:/root/.config/nvim
+      - .\dotfiles:/root/dotfiles
+      - .\init:/root/init
