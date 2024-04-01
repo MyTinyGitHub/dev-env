@@ -7,12 +7,13 @@ rm /root/.zshrc
 
 stow --dir='/root/dotfiles/' .
 
-source ~/.zshrc
 source ~/.zshenv
+source ~/.zshrc
+source ~/.p10k.zsh
 
 #sdk install maven
 #sdk install java 17-open
 
-~/.config/tmux/plugins/tpm/scripts/install_plugins.sh
+zsh ~/.config/tmux/plugins/tpm/scripts/install_plugins.sh
 
 tail -f /dev/null
