@@ -1,7 +1,4 @@
-#!/bin/zsh
-
-#Install SDKman Java & Maven
-curl -s "https://get.sdkman.io" | bash
+#!/bin/bash
 
 rm /root/.zshrc
 
@@ -10,6 +7,9 @@ stow --dir='/root/dotfiles/' .
 source ~/.zshenv
 source ~/.zshrc
 source ~/.p10k.zsh
+
+#Install SDKman Java & Maven
+curl -s "https://get.sdkman.io" | bash
 
 #sdk install maven
 #sdk install java 17-open
