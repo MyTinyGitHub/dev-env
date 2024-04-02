@@ -9,7 +9,7 @@ source ~/.zshrc
 source ~/.p10k.zsh
 
 #Install SDKman Java & Maven
-curl -s "https://get.sdkman.io" | bash
+#curl -s "https://get.sdkman.io" | bash
 
 #sdk install maven
 #sdk install java 17-open

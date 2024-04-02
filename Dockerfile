@@ -8,10 +8,10 @@ RUN apk add zsh --update
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #Docker
-RUN apk add docker --update
+RUN apk add docker-cli docker-cli-compose --update
 
 #Install go
-RUN apk add go --update 
+RUN apk add go maven openjdk17 --update 
 RUN export PATH=$PATH:/usr/local/go/bin
 
 RUN mkdir -p /root/.config/nvim
