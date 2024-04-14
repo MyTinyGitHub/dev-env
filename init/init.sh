@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm /root/.zshrc
+rm /root/.zshenv 
 
 stow --dir='/root/dotfiles/' .
 
